@@ -8,7 +8,7 @@
     --side-padding:15vw;
 }
 
-h1, h2, h3, h4, h5, h6, blockquote {
+h1, h2, h3, h4, h5, h6, blockquote, body, .quote-section p {
     margin: 0;
     padding: 0;
 }
@@ -18,9 +18,17 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
     background-color: var(--primary-color);
+}
+
+button {
+    padding: 12px 40px;
+    font-size: 16px;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    border-style: solid;
+    cursor: pointer;
 }
 
 /* HEADER */
@@ -34,6 +42,7 @@ header {
 
 .header-logo {
     font-size: 24px;
+    font-weight: bold;
     color: var(--primary-text-color);
 }
 
@@ -66,8 +75,6 @@ a {
 }
 
 h1 {
-    padding: 0;
-    margin: 0;
     color: var(--primary-text-color);
     font-size: 48px;
     font-weight: 900;
@@ -76,7 +83,6 @@ h1 {
 .hero-left p {
     font-size: 18px; 
     color: var(--secondary-text-color);
-    flex: 1;
 }
 
 .hero-section img {
@@ -86,13 +92,7 @@ h1 {
 }
 
 .hero-section button {
-    padding: 12px 40px;
-    font-size: 16px;
-    color: var(--primary-text-color);
-    background-color: var(--secondary-color);
-    border-radius: 16px;
     border-color: var(--secondary-color);
-    border-style: solid;
 }
 
 /* INFO-SECTION */
@@ -107,11 +107,16 @@ h1 {
     gap: 16px;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
 .info-card {
     display: flex;
     justify-content: space-between;
     gap: 8px;
-
 }
 
 .card {
@@ -145,8 +150,6 @@ h1 {
 }
 
 .quote-section p {
-    margin: 0;
-    padding: 0;
     text-align: right;
     font-size: 24px;
     font-weight: bold;
@@ -177,13 +180,7 @@ h1 {
 }
 
 .cta-card button {
-    padding: 12px 40px;
-    font-size: 16px;
-    color: var(--primary-text-color);
-    background-color: var(--secondary-color);
     border-color: var(--primary-text-color);
-    border-style: solid;
-    border-radius: 16px;
 }
 
 /* FOOTER */
