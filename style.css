@@ -5,8 +5,14 @@
     --secondary-color: #3882F6;
     --primary-text-color: #F9FAF8;
     --secondary-text-color: #E5E7EB;
-    --side-padding:120px;
+    --side-padding:15vw;
 }
+
+h1, h2, h3, h4, h5, h6, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -14,13 +20,15 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    background-color: var(--primary-color);
 }
+
+/* HEADER */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
     padding: 12px var(--side-padding);
 }
 
@@ -32,7 +40,7 @@ header {
 .header-links ul {
     display: flex;
     list-style: none;
-    gap: 12px;
+    gap: 20px;
 }
 
 a {
@@ -40,16 +48,21 @@ a {
     color: var(--secondary-text-color);
 }
 
+/* MAIN-CONTENT */
+
 .main-content {
-    /* flex: 1; */
+    background-color: var(--primary-text-color);
 }
+
+/* HERO-SECTION */
 
 .hero-section {
     background-color: var(--primary-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 80px var(--side-padding);
-    gap: 20px;
+    height: 30vh;
+    gap: 80px;
 }
 
 h1 {
@@ -61,13 +74,14 @@ h1 {
 }
 
 .hero-left p {
-    font-size: 18px;
+    font-size: 18px; 
     color: var(--secondary-text-color);
+    flex: 1;
 }
 
 .hero-section img {
     object-fit: cover;
-    width: 100%;
+    width: 40vw;
     height: 100%;
 }
 
@@ -76,5 +90,109 @@ h1 {
     font-size: 16px;
     color: var(--primary-text-color);
     background-color: var(--secondary-color);
+    border-radius: 16px;
+    border-color: var(--secondary-color);
+    border-style: solid;
+}
+
+/* INFO-SECTION */
+
+.info-section {
+    padding: 40px var(--side-padding);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    gap: 16px;
+}
+
+.info-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+
+}
+
+.card {
+    width: 260px;
+    height: 320px;
+    color: var(--primary-color);
+}
+
+.card img {
+    object-fit: cover;
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    border: solid;
+    border-width: 4px;
+    border-color: var(--secondary-color);
+}
+
+/* QUOTE-SECTION */
+
+.quote-section {
+    background-color: var(--secondary-text-color);
+    padding: 80px var(--side-padding);
+    height: 40vh;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-section p {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* CALL-TO-ACTION-SECTION */
+
+.cta-section {
+    height: 30vh;
+    padding: 80px var(--side-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta-card {
+    background-color: var(--secondary-color);
+    color: var(--primary-text-color);
+    padding: 36px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 12px;
+}
+
+.cta-card p {
+    font-weight: 300;
+}
+
+.cta-card button {
+    padding: 12px 40px;
+    font-size: 16px;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-color);
+    border-color: var(--primary-text-color);
+    border-style: solid;
+    border-radius: 16px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 12px;
+    height: 60px;
+    color: var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
